@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quai de la Photo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background:#f6f1ec;
+      color:#1f1b15;
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:1rem;
+      padding:1rem;
+    }
+    main {
+      width: min(640px,100%);
+      background:#fff;
+      padding:2rem;
+      border-radius:12px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size:clamp(2rem,4vw,2.5rem);
+      margin:0 0 0.5rem;
+    }
+    p {
+      margin:0 0 1rem;
+      line-height:1.5;
+    }
+    .link-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:0.75rem;
+    }
+    .card {
+      border:1px solid rgba(0,0,0,0.07);
+      border-radius:10px;
+      padding:1rem;
+      background:#faf8f5;
+      text-decoration:none;
+      color:#1f1b15;
+      transition:transform .2s,box-shadow .2s;
+    }
+    .card:hover {
+      transform:translateY(-3px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      margin:0 0 0.25rem;
+      font-size:1.25rem;
+    }
+    .card p {
+      margin:0;
+      font-size:0.95rem;
+      color:#4a4037;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Quai de la Photo</h1>
+    <p>Bienvenue sur l’espace de coordination du Quai de la Photo. Retrouvez les rappels organisés par thème et ajoutez vos propres sections pour suivre les interventions, la compta, la sécurité ou les services.</p>
+    <div class="link-grid">
+      <a class="card" href="QUAI DE LA PHOTO.html">
+        <h2>Rappel principal</h2>
+        <p>Ouvrez la page dédiée aux tâches et sous-tâches classées par service, logistique, climatisation, etc.</p>
+      </a>
+      <a class="card" href="road.html">
+        <h2>Roadbook</h2>
+        <p>Consultez le roadbook lié aux actions sur le terrain (logistique / itinéraires).</p>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
